@@ -1,3 +1,5 @@
+package task1;
+
 import lombok.SneakyThrows;
 
 import java.sql.Connection;
