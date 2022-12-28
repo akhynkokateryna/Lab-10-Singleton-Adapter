@@ -10,6 +10,10 @@ import java.util.List;
 public class MessageSender {
     List<Client> allUsers;
 
+    public MessageSender(List<Client> clients) {
+        allUsers = clients;
+    }
+
     public void send(String text) {
         List<Client> filteredUsers = allUsers.stream()
                 .filter(user -> user.getCountry().equals("Ukraine"))

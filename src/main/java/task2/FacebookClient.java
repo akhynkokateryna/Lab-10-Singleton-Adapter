@@ -6,7 +6,7 @@ import lombok.Setter;
 import java.time.LocalDate;
 
 public class FacebookClient implements Client {
-    @Setter @Getter
+    @Getter
     private String notification = null;
     private final FacebookUser user;
 
